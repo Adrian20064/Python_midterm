@@ -9,4 +9,4 @@ class MathForm(forms.Form):
         ('mul', 'Multiply'),
         ('div', 'Divide'),
     ]
-    operation = forms.ChoiceField(choices=OPERATION_CHOICES, label="Operación")
+    operation = forms.ChoiceField(choices=OPERATION_CHOICES, label="Operation:")

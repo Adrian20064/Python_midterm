@@ -1,9 +1,9 @@
-<h1>Resultado</h1>
+<h1>Result</h1>
 
 {% if result is not None %}
-<p><strong>Resultado:</strong> {{ result }}</p>
+<p><strong>Result:</strong> {{ result }}</p>
 {% elif error %}
 <p style="color: red"><strong>Error:</strong> {{ error }}</p>
 {% endif %}
 
-<a href="{% url 'calculate' %}">Volver</a>
+<a href="{% url 'calculate' %}">First Page</a>

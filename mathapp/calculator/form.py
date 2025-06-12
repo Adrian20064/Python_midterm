@@ -1,12 +1,12 @@
 from django import forms
 
 class MathForm(forms.Form):
-    input1 = forms.FloatField(label="Número 1")
-    input2 = forms.FloatField(label="Número 2")
+    input1 = forms.FloatField(label="Number 1")
+    input2 = forms.FloatField(label="Number 2")
     OPERATION_CHOICES = [
-        ('add', 'Sumar'),
-        ('sub', 'Restar'),
-        ('mul', 'Multiplicar'),
-        ('div', 'Dividir'),
+        ('add', 'add'),
+        ('sub', 'subtract'),
+        ('mul', 'Multiply'),
+        ('div', 'Divide'),
     ]
     operation = forms.ChoiceField(choices=OPERATION_CHOICES, label="Operación")
